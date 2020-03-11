@@ -1,0 +1,64 @@
+<div class="container-fluid px-0 py-5 mx-auto Scrollimage">
+    <div class="row justify-content-center mx-0 mx-md-auto">
+        <div class="col-lg-10 col-md-11 px-1 px-sm-2">
+
+            <div class="card border-0 px-3">
+                <p>
+                    <h4>Review and Earn Reward Points</h4>
+                    <span><b>Share tour experience for better improvement and earn reward points</b></span>
+
+                    <div class="row">
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" [(ngModel)]="review.rating" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" [(ngModel)]="review.rating" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" [(ngModel)]="review.rating" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" [(ngModel)]="review.rating" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" [(ngModel)]="review.rating" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group shadow-textarea">
+
+                        <textarea [(ngModel)]="review.reviewComment" class="form-control z-depth-1 border" id="exampleFormControlTextarea6" rows="3" placeholder="Please share your experience..."></textarea>
+                    </div>
+
+                    <div class="row">
+                        <button type="button" class="btn-lg btn-success" (click)="addReviews(review);">Submit</button>
+                    </div>
+                    <!-- top row -->
+                    <!-- middle row -->
+                    <!-- Review by user -->
+                    <div *ngFor="let element of reviews">
+                        <div class="review p-5">
+                            <div class="row d-flex">
+                                <div class="profile-pic"><img src="../../../../../assets/profileIcon.png" width="60px" height="60px"></div>
+                                <div class="d-flex flex-column pl-3">
+                                    <h4>{{element.userName}}</h4>
+                                    <p class="grey-text">30 min ago</p>
+                                </div>
+                            </div>
+                            <div class="row pb-3 d-inline-flex " *ngFor="let r of arrayOne(element.rating)">
+                                <div class="fa fa-circle green-dot my-auto rating-dot"></div>
+
+                            </div>
+
+                            <div class="row pb-3">
+                                <p>{{element.reviewComment}}</p>
+                            </div>
+                            <div class="row ml-1">
+                                <div class="row bg-light via">
+                                    <div class="px-2"><img src="https://i.imgur.com/8lJt6UN.png" width="18px" height="18px"></div>
+                                    <p class="grey-text mb-0 px-3">via Google</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

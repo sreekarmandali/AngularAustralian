@@ -1,0 +1,39 @@
+.Rcorners2 {
+    border-radius: 11px;
+    border: 2px solid #595959;
+    padding: 20px;
+    width: 100%;
+    height: 187px;
+    cursor: pointer;
+}
+
+
+.Rcorners1 {
+    border-radius: 9px;
+    border: 2px solid #595959;
+    padding: 20px;
+    width: 100%;
+    height: 700px;
+   
+}
+.BackImage {
+    background-image: url("../../../../../assets/ReviewBack.jpeg") !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat,
+}
+
+.Rcorners2:hover {
+    opacity: 0.4
+}
+.Blackfont {
+    color:black;
+}
+a.router-link-active {
+    color: #f66;
+    background-color: #d6d6c2;
+}
+
+li.router-link-active a {
+    color: #f66;
+}

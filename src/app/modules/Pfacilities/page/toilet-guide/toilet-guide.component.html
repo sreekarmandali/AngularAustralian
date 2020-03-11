@@ -1,0 +1,26 @@
+<app-header></app-header>
+    <div class=" Rcorners4 BackImage">
+    <div class='row'><div class="col-1"></div><div class="col-4 Changepointer">
+        
+      <span routerLink="/PFacilities"><i  class="fa fa-arrow-left Backnavigation" ></i></span>
+      <span routerLink="/PFacilities" class="headerText Backnavigation">Parental Facilities</span>
+      </div>
+    <div class="headerText col-5 Margincenetr ">Toilets</div>
+</div>
+ 
+<div class="container">
+        <div *ngFor="let element of toilets">
+            <div routerLink="/PFacilities/toilets"  class="Rcorners2">
+                <p>{{element.Distance}} min walk</p>
+                <br/>
+
+                <span class="Rcorners1 border">Facility will be closed at {{element.closingTime}} </span>&nbsp;&nbsp;
+                &nbsp;&nbsp;<span class="Rcorners3 border">Facility will be cleaned at {{element.closingTime}} </span>
+                <br/>
+                <br/>
+                <p>Facilities availaible</p>
+
+            </div>
+    </div>
+    </div>
+</div> 

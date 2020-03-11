@@ -1,0 +1,28 @@
+.FeautureBlock {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.Imagesize:hover {
+  opacity: 0.3
+}
+
+.Centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.Alignleft {
+  margin-right: 145px;
+}
+
+.Imagesize {
+  width: 450px;
+  height: 400px;
+  opacity: 0.6;
+}

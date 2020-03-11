@@ -1,0 +1,11 @@
+.Imagesize {
+    height:600px;
+    width:70%;
+    margin-left:150px
+    
+}
+.Scrollimage {
+    width: 100%;
+    height: 450px;
+    overflow:auto;
+}

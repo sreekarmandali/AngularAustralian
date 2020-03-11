@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class=" Rcorners1 BackImage">
+<div class='row'><div class="col-1"></div><div class="col-4 Changepointer">
+    
+  <span routerLink="/PFacilities"><i  class="fa fa-arrow-left Backnavigation" ></i></span>
+  <span routerLink="/PFacilities" class="headerText Backnavigation">Parental Facilities</span>
+  </div>
+<div class="headerText col-5 Margincenetr ">Toilets</div>
+</div>
+
+
+<nav class="nav nav-pills nav-justified">
+<a [routerLink]="['directions']" class="nav-item nav-link  border" >
+            <span class="Blackfont"><b>Directions</b></span>
+          </a>
+          <a [routerLink]="['reviews']" class="nav-item nav-link  border" >
+            <span class="Blackfont"><b>Reviews</b></span>
+          </a>
+          <a [routerLink]="['photos']" class="nav-item nav-link  border" >
+            <span class="Blackfont"><b>Photos</b></span>
+          </a>
+</nav>
+    <router-outlet></router-outlet>
+
+
+</div>
